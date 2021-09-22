@@ -1,4 +1,4 @@
-## Auto Environment Set
+## Auto Environment Setting
 ### check the setting:
 conda config --show | grep auto_activate_base
 ### set it to false:
