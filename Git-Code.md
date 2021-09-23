@@ -39,3 +39,27 @@ git remote -v
 
 ### Push it to GitHub
 git push -U ORIGIN MASTER
+
+## 3.Git branch
+
+### Check all branches
+git branch
+(* marks the branch you are on)
+
+### Create new branch
+git checkout -b BRANCH NAME
+
+### Change to a new branch
+git checkout BRANCH NAME
+
+### Check file changes comparing to another branch
+git diff BRANCH NAME 2
+
+### Push to GitHub
+git push -u origin BRANCH NAME
+
+### Pull request from master branch to merge feature branch
+git pull origin BRANCH NAME
+
+### Delete merged branch
+git branch -d BRANCH NAME
