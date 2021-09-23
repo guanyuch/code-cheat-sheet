@@ -1,6 +1,6 @@
 # Git Code Cheat Sheet
 
-## From Github to local
+## 1.From Github to local
 
 ### Clone or download repository
 git clone GITHUB SSH LINK
@@ -20,7 +20,7 @@ git commit -m "first small text field" -m "optional extended description"
 ### Push to Github
 git push ORIGIN MASTER
 
-## From local to Github
+## 2.From local to Github
 
 ### Initialize Git repository
 git init
