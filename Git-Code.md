@@ -2,25 +2,25 @@
 
 ## **1. From Github to local**
 
-### Clone or download repository
+#### Clone or download repository
 - `git clone GITHUB SSH LINK`
 
-### Check status of files
+#### Check status of files
 - `git status`
 
-### Add all files
+#### Add all files
 - `git add .`
 
-### Add a specific file
+#### Add a specific file
 - `git add FILE NAME`
 
-### Commit the changes
+#### Commit the changes
 - `git commit -m "first small text field" -m "optional extended description"`
 
-### Push to Github
+#### Push to Github
 - `git push ORIGIN MASTER`
 
-### Pull from Github
+#### Pull from Github
 - `git pull`
 
 ## **2. From local to Github**
