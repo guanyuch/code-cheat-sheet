@@ -3,13 +3,13 @@
 ## **1. From Github to local**
 
 ### Clone or download repository
-`git clone ` *GITHUB SSH LINK*
+- `git clone GITHUB SSH LINK`
 
 ### Check status of files
-git status
+- `git status`
 
 ### Add all files
-git add .
+- `git add .`
 
 ### Add a specific file
 git add FILE NAME
