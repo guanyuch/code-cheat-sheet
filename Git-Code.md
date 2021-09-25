@@ -1,9 +1,9 @@
-# Git Code Cheat Sheet
+# **Git Code Cheat Sheet**
 
-## 1.From Github to local
+## **1. From Github to local**
 
 ### Clone or download repository
-git clone GITHUB SSH LINK
+`git clone ` *GITHUB SSH LINK*
 
 ### Check status of files
 git status
@@ -20,7 +20,10 @@ git commit -m "first small text field" -m "optional extended description"
 ### Push to Github
 git push ORIGIN MASTER
 
-## 2.From local to Github
+### Pull from Github
+git pull
+
+## **2. From local to Github**
 
 ### Initialize Git repository
 git init
@@ -38,12 +41,12 @@ git remote add origin GITHUB SSH LINK
 git remote -v
 
 ### Push it to GitHub
-git push -U ORIGIN MASTER
+`git push -U ORIGIN MASTER`
 
-## 3.Git branch
+## **3. Git branch**
 
 ### Check all branches
-git branch
+`git branch` <br />
 (* marks the branch you are on)
 
 ### Create new branch
