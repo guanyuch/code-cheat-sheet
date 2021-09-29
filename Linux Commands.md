@@ -17,8 +17,7 @@
 ### cat
  - `$ cat FILE NAME ` Displays the file content
  - `$ cat > FILE NAME ` Creates a new file
- - `$ cat FILE1 FILE2 > FILE3 ` Joins two files and stores the output in a new file
-<br /> 
+ - `$ cat FILE1 FILE2 > FILE3 ` Joins two files and stores the output in a new file <br /> 
  - `$ less FILE NAME ` Browses through a text file
  - `$ head FILE NAME ` Displays the first 10 lines of file
  - `$ tail FILE NAME ` Displays the last 10 lines of file
