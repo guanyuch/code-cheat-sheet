@@ -17,7 +17,7 @@
 ### cat
  - `$ cat FILE NAME ` Displays the file content
  - `$ cat > FILE NAME ` Creates a new file
- - `$ cat FILE1 FILE2 > FILE3 ` Joins two files and stores the output in a new file <br /> 
+ - `$ cat FILE1 FILE2 > FILE3 ` Joins two files and stores the output in a new file
  - `$ less FILE NAME ` Browses through a text file
  - `$ head FILE NAME ` Displays the first 10 lines of file
  - `$ tail FILE NAME ` Displays the last 10 lines of file
@@ -26,6 +26,8 @@
 ### mv
  - `$ mv FILENAME NEW_FILENAME ` Renames the file to the new name
  - `$ mv FILE 'NEW PATH' ` Moves the file to the new location
+ - `$ put FILENAME ` Uploads a file from local directory to remote directory
+ - `$ get FILENAME ` Downloads a file from remote directory to local directory.
 
 ### rm
  - `$ rm FILENAME ` Deletes the file
@@ -37,76 +39,18 @@
  - `$ cp FILENAME NEW_FILENAME ` Copies the file to the new file
  - `$ cp -r SOURCE_DIR DESTINATION_DIR ` Copies the source directory recursively to destination.
 
-# Pan Yiqing 
-# Learning SQL
-# Create Table
+### pwd
+ - `$ pwd ` Prints the path of the working directory
 
-$ pwd 
-# Displays the name/path of the current working directory  
-$ mkdir directory_name
-$ | (e.g. ‘cd training_materials/dev1/ | ls’, goes to ‘dev1’ directory then lists all files under ‘dev1’)  # Sends output of one command to another  
+### mkdir
+ - `$ mkdir DIRECTORY NAME` Creates a new directory
+ - `$ rmdir DIRECTORY NAME` Deletes a new directory
 
-#### Clone or download repository
-- `git clone GITHUB SSH LINK`
+### |
+ - `$ | ` e.g. ‘cd training_materials/dev1/ | ls’, goes to ‘dev1’ directory then lists all files under ‘dev1’
 
-#### Check status of files
-- `git status`
+ ### clear
+ - `$ clear ` Clears the terminal
+ - `$ quit` Logs out
 
-#### Add all files
-- `git add .`
-
-#### Add a specific file
-- `git add FILE NAME`
-
-#### Commit the changes
-- `git commit -m "first small text field" -m "optional extended description"`
-
-#### Push to Github
-- `git push ORIGIN MASTER`
-
-#### Pull from Github
-- `git pull`
-
-## **2. From local to Github**
-
-#### Initialize Git repository
-- `git init`
-
-#### Then add and commit
-- `git add FILE NAME`
-- `git status`
-- `git commit -m "first small text field" -m "optional extended description"`
-
-#### Create new repo on Github for this local file
-(Create new repo on Github, then use below code to connect)
-- `git remote add origin GITHUB SSH LINK`
-
-#### Check the connection
-- `git remote -v`
-
-#### Push it to GitHub
-- `git push -U ORIGIN MASTER`
-
-## **3. Git branch**
-
-#### Check all branches
-- `git branch` <br />
-(* marks the branch you are on)
-
-#### Create new branch
-- `git checkout -b BRANCH NAME`
-
-#### Change to a new branch
-- `git checkout BRANCH NAME`
-
-#### Check file changes comparing to another branch
-- `git diff BRANCH NAME 2`
-
-#### Push to GitHub
-- `git push -u origin BRANCH NAME`
-
-#### Pull request from master branch to merge feature branch
-- `git pull origin BRANCH NAME`
-
-#### Delete merged branch
-- `git branch -d BRANCH NAME`
+ ### 
