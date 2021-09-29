@@ -37,7 +37,9 @@
  - `$ cp FILENAME NEW_FILENAME ` Copies the file to the new file
  - `$ cp -r SOURCE_DIR DESTINATION_DIR ` Copies the source directory recursively to destination.
 
-# Pan Yiqing
+# Pan Yiqing 
+# Learning SQL
+# Create Table
 
 $ pwd 
 # Displays the name/path of the current working directory  
