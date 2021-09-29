@@ -37,29 +37,11 @@
  - `$ cp FILENAME NEW_FILENAME ` Copies the file to the new file
  - `$ cp -r SOURCE_DIR DESTINATION_DIR ` Copies the source directory recursively to destination.
 
-$ pwd  
+# Pan Yiqing
+
+$ pwd 
 # Displays the name/path of the current working directory  
-$ mkdir directory_name 
-# Creates a new directory   
-$ cp file1 file2 
-# Creates a copy of file1 as file2  
-$ cat file_name 
-# Displays the contents of the file  
-$ less file_name 
-# Displays the contents of the file (similar to above but paginates the output -use this to display  your text files!)  
-$ head file_name 
-# Displays the first 10 lines of the file  
-$ tail file_name 
-# Displays the last 10 lines of the file  
-$ cd ..  
-# Goes up one level in the directory tree  
-
-$ cd  
-(also, another case of this is “$ cd ~” )
-
-# Goes to the $HOME directory  
-$ cd /etc 
-# Goes to the /etc directory  
+$ mkdir directory_name
 $ | (e.g. ‘cd training_materials/dev1/ | ls’, goes to ‘dev1’ directory then lists all files under ‘dev1’)  # Sends output of one command to another  
 
 #### Clone or download repository
