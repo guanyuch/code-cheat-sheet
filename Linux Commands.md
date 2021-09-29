@@ -1,25 +1,41 @@
-# **Linux Command Line Cheat Sheet**
+# **Command Line Cheat Sheet**
 
 ## **1. Basic Linux Commands**
 
 ### cd
-cd takes a directory name as an argument, and switches into that directory. <br />
- - `$ cd Desktop/`
- 
- - `$ ls `(also, a special case of this is “$ dir” as in directory) 
-# Lists all files in the current directory  
+ - `$ cd ~ ` Navigate to HOME directory
+ - `$ cd /` Navigate to the root directory
+ - `$ cd .. ` Move one level up 
+ - `$ cd DIRECTORY NAME` Change to a particular directory
+
+### ls
+ - `$ ls ` Lists all files and directories
+ - `$ ls-R` Lists files in sub-directories as well
+ - `$ ls-a ` Lists hidden files as well 
+ - `$ ls-al` Lists files and directories with detailed information like permissions, size, etc.
+
+### cat
+ - `$ cat FILE NAME ` Displays the file content
+ - `$ cat > FILE NAME` Creates a new file
+ - `$ cat FILE1 FILE2 > FILE3 ` Joins two files and stores the output in a new file
+
+### mv
+ - `$ mv FILENAME NEW_FILENAME` Renames the file to the new name
+ - `$ mv FILE 'NEW PATH' ` Moves the file to the new location
+
+### rm
+ - `$ rm FILENAME ` Deletes the file
+ - `$ rm -r DIRECTORY ` Deletes the directory and its content recursively
+ - `$ rm -f FILENAME ` Forces to remove the file without confirmation
+ - `$ rm -rf DIRECTORY ` Forcefully deletes the directory and its content recursively
+
 $ pwd  
 # Displays the name/path of the current working directory  
 $ mkdir directory_name 
-# Creates a new directory  
-$ rm file_name 
-# Deletes the file  
-$ rm -r directory_name 
-# Deletes the directory and its contents  
+# Creates a new directory   
 $ cp file1 file2 
 # Creates a copy of file1 as file2  
-$ mv file1 file2 
-# Moves (or rename) file1 into file2 (If file2 is an existing directory, move file1 into directory file2)  $ cat file_name 
+$ cat file_name 
 # Displays the contents of the file  
 $ less file_name 
 # Displays the contents of the file (similar to above but paginates the output -use this to display  your text files!)  
