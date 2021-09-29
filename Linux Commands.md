@@ -43,14 +43,14 @@
  - `$ pwd ` Prints the path of the working directory
 
 ### mkdir
- - `$ mkdir DIRECTORY NAME` Creates a new directory
- - `$ rmdir DIRECTORY NAME` Deletes a new directory
+ - `$ mkdir DIRECTORY NAME ` Creates a new directory
+ - `$ rmdir DIRECTORY NAME ` Deletes a new directory
 
 ### |
  - `$ | ` e.g. ‘cd training_materials/dev1/ | ls’, goes to ‘dev1’ directory then lists all files under ‘dev1’
 
  ### clear
  - `$ clear ` Clears the terminal
- - `$ quit` Logs out
+ - `$ quit ` Logs out
 
  ### 
