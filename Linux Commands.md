@@ -1,12 +1,12 @@
-# **Command Line Cheat Sheet**
+# **Linux Command Line Cheat Sheet**
 
-## **1. From Github to local**
+## **1. Basic Linux Commands**
 
 ### cd
 cd takes a directory name as an argument, and switches into that directory. <br />
-$ cd Desktop/
-
-$ ls (also, a special case of this is “$ dir” as in directory) 
+ - `$ cd Desktop/`
+ 
+ - `$ ls `(also, a special case of this is “$ dir” as in directory) 
 # Lists all files in the current directory  
 $ pwd  
 # Displays the name/path of the current working directory  
