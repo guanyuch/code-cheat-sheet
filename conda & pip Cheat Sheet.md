@@ -50,44 +50,20 @@
 
 ## **2. pip**
 
-#### Install a package directly from PyPI into the current environment using pip
+#### Install a package directly from PyPI into the current environment
 - `pip install scikit-learn `
 
-#### Then add and commit
-- `git add FILE NAME`
-- `git status`
-- `git commit -m "first small text field" -m "optional extended description"`
+#### Install a package from a local wheel file
+- `pip install PAKCAGENAME.whl `
 
-#### Create new repo on Github for this local file
-(Create new repo on Github, then use below code to connect)
-- `git remote add origin GITHUB SSH LINK`
+#### Install specific version
+- `pip install requests==2.22.0 `
 
-#### Check the connection
-- `git remote -v`
+#### Install packages from a requirements file
+- `pip install -r requirements.txt `
 
-#### Push it to GitHub
-- `git push -U ORIGIN MASTER`
+#### Uninstall a package
+- `pip uninstall scikit-learn `
 
-## **3. Git branch**
-
-#### Check all branches
-- `git branch` <br />
-(* marks the branch you are on)
-
-#### Create new branch
-- `git checkout -b BRANCH NAME`
-
-#### Change to a new branch
-- `git checkout BRANCH NAME`
-
-#### Check file changes comparing to another branch
-- `git diff BRANCH NAME 2`
-
-#### Push to GitHub
-- `git push -u origin BRANCH NAME`
-
-#### Pull request from master branch to merge feature branch
-- `git pull origin BRANCH NAME`
-
-#### Delete merged branch
-- `git branch -d BRANCH NAME`
+#### Forcefully upgrade and reinstall a package
+- `pip install --upgrade --force-reinstall scikit-learn `
