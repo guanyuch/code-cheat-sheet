@@ -1,4 +1,4 @@
-# **Git Code Cheat Sheet**
+# **SQL Cheat Sheet**
 
 ## **1. From Github to local**
 
