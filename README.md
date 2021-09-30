@@ -1,7 +1,4 @@
-# Git Code
-
-init
-
-### Git Clone
-
-I know it!
+# Cheat Sheet
+## conda & pip 
+## Git Code
+## Linux Commands

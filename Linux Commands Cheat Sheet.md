@@ -1,4 +1,4 @@
-# **Command Line Cheat Sheet**
+# **Linux Commands Cheat Sheet**
 
 ## **1. Basic Linux Commands**
 
