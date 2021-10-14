@@ -40,6 +40,9 @@
 - WINDOWS: ` deactivate py38 `
 - LINUX, macOS: ` source deactivate py38 `
 
+#### Make the new environment show in Jupyter Notebook kernel list
+- ` python -m ipykernel install --user --name py38 --display-name "py38" `
+
 #### Auto Environment Setting
 #### Check the setting
 - `conda config --show | grep auto_activate_base `
