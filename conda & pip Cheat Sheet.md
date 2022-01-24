@@ -51,6 +51,9 @@
 #### Set it to true
 - `conda config --set auto_activate_base True `
 
+#### Save a copy of an environment
+- `conda env export > environment.yaml `
+
 ## **2. pip**
 
 #### Install a package directly from PyPI into the current environment
@@ -70,3 +73,9 @@
 
 #### Forcefully upgrade and reinstall a package
 - `pip install --upgrade --force-reinstall scikit-learn `
+
+#### Share the List of Dependencies
+- `pip freeze > requirements.txt `
+
+#### Install the List of Dependencies
+- `pip install -r requirements.txt `
