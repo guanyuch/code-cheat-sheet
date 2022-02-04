@@ -52,7 +52,10 @@
 - `conda config --set auto_activate_base True `
 
 #### Save a copy of an environment
-- `conda env export > environment.yaml `
+- `conda env export > environment.yml `
+
+#### Create an environment from yml
+- `conda env create -f environment.yml `
 
 ## **2. pip**
 
