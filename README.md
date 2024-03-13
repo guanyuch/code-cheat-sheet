@@ -3,3 +3,4 @@
 ### - Git Code
 ### - Linux Commands
 ### - SQL
+### - vi shortcut
