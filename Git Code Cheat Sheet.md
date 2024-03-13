@@ -1,9 +1,9 @@
 # **Git Code Cheat Sheet**
 
-## **1. From Github to local**
+## **1. From GitHub to Local**
 
 #### Clone or download repository
-- `git clone GITHUB SSH LINK`
+- `git clone GITHUB_SSH_LINK`
 
 #### Check status of files
 - `git status`
@@ -12,60 +12,59 @@
 - `git add .`
 
 #### Add a specific file
-- `git add FILE NAME`
+- `git add FILE_NAME`
 
 #### Commit the changes
-- `git commit -m "first small text field" -m "optional extended description"`
+- `git commit -m "commit message" -m "optional extended description"`
 
-#### Push to Github
-- `git push ORIGIN MASTER`
+#### Push to GitHub
+- `git push origin main`
 
-#### Push to Github to overwrite
-- `git push -f ORIGIN MASTER`
+#### Push to GitHub to overwrite
+- `git push -f origin main`
 
-#### Pull from Github
+#### Pull from GitHub
 - `git pull`
 
-## **2. From local to Github**
+## **2. From Local to GitHub**
 
 #### Initialize Git repository
 - `git init`
 
 #### Then add and commit
-- `git add FILE NAME`
-- `git status`
-- `git commit -m "first small text field" -m "optional extended description"`
+- `git add FILE_NAME`
+- `git commit -m "commit message" -m "optional extended description"`
 
-#### Create new repo on Github for this local file
-(Create new repo on Github, then use below code to connect)
-- `git remote add origin GITHUB SSH LINK`
+#### Create new repo on GitHub for this local file
+(Create new repo on GitHub, then use the below code to connect)
+- `git remote add origin GITHUB_SSH_LINK`
 
 #### Check the connection
 - `git remote -v`
 
 #### Push it to GitHub
-- `git push -U ORIGIN MASTER`
+- `git push -u origin main`
 
-## **3. Git branch**
+## **3. Git Branch**
 
 #### Check all branches
-- `git branch` <br />
-(* marks the branch you are on)
+- `git branch`  
+(Note: * marks the branch you are on)
 
 #### Create new branch
-- `git checkout -b BRANCH NAME`
+- `git checkout -b BRANCH_NAME`
 
 #### Change to a new branch
-- `git checkout BRANCH NAME`
+- `git checkout BRANCH_NAME`
 
 #### Check file changes comparing to another branch
-- `git diff BRANCH NAME 2`
+- `git diff BRANCH_NAME`
 
 #### Push to GitHub
-- `git push -u origin BRANCH NAME`
+- `git push -u origin BRANCH_NAME`
 
-#### Pull request from master branch to merge feature branch
-- `git pull origin BRANCH NAME`
+#### Pull request from the master branch to merge feature branch
+- `git pull origin master`
 
 #### Delete merged branch
-- `git branch -d BRANCH NAME`
+- `git branch -d BRANCH_NAME`
