@@ -1,71 +1,91 @@
 # **SQL Cheat Sheet**
 
-## **1. From Github to local**
+## **Basic Commands**
 
-#### Clone or download repository
-- `git clone GITHUB SSH LINK`
+#### Create a new database
+- `CREATE DATABASE database_name;`
 
-#### Check status of files
-- `git status`
+#### Delete a database
+- `DROP DATABASE database_name;`
 
-#### Add all files
-- `git add .`
+#### Create a new table
+- `CREATE TABLE table_name (column1 datatype, column2 datatype, ...);`
 
-#### Add a specific file
-- `git add FILE NAME`
+#### Delete a table
+- `DROP TABLE table_name;`
 
-#### Commit the changes
-- `git commit -m "first small text field" -m "optional extended description"`
+#### Insert a single row into a table
+- `INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);`
 
-#### Push to Github
-- `git push ORIGIN MASTER`
+#### Insert multiple rows into a table
+- `INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...), (value3, value4, ...), ...;`
 
-#### Push to Github to overwrite
-- `git push -f ORIGIN MASTER`
+#### Select all columns from a table
+- `SELECT * FROM table_name;`
 
-#### Pull from Github
-- `git pull`
+#### Select specific columns from a table
+- `SELECT column1, column2 FROM table_name;`
 
-## **2. From local to Github**
+#### Update rows in a table
+- `UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;`
 
-#### Initialize Git repository
-- `git init`
+#### Delete rows from a table
+- `DELETE FROM table_name WHERE condition;`
 
-#### Then add and commit
-- `git add FILE NAME`
-- `git status`
-- `git commit -m "first small text field" -m "optional extended description"`
+## **Query Modifiers**
 
-#### Create new repo on Github for this local file
-(Create new repo on Github, then use below code to connect)
-- `git remote add origin GITHUB SSH LINK`
+#### Filter results using a condition
+- `SELECT * FROM table_name WHERE condition;`
 
-#### Check the connection
-- `git remote -v`
+#### Sort results by a column (ASCending or DESCending)
+- `SELECT * FROM table_name ORDER BY column ASC|DESC;`
 
-#### Push it to GitHub
-- `git push -U ORIGIN MASTER`
+#### Limit the number of returned results
+- `SELECT * FROM table_name LIMIT number;`
 
-## **3. Git branch**
+#### Count the number of rows that match a condition
+- `SELECT COUNT(*) FROM table_name WHERE condition;`
 
-#### Check all branches
-- `git branch` <br />
-(* marks the branch you are on)
+#### Find the minimum/maximum value of a column
+- `SELECT MIN(column) FROM table_name;`
+- `SELECT MAX(column) FROM table_name;`
 
-#### Create new branch
-- `git checkout -b BRANCH NAME`
+#### Calculate the sum of a column
+- `SELECT SUM(column) FROM table_name;`
 
-#### Change to a new branch
-- `git checkout BRANCH NAME`
+#### Calculate the average value of a column
+- `SELECT AVG(column) FROM table_name;`
 
-#### Check file changes comparing to another branch
-- `git diff BRANCH NAME 2`
+#### Group rows that have the same values in specified columns into summary rows
+- `SELECT column, AGG_FUNC(column) FROM table_name GROUP BY column;`
 
-#### Push to GitHub
-- `git push -u origin BRANCH NAME`
+#### Filter groups with HAVING
+- `SELECT column, AGG_FUNC(column) FROM table_name GROUP BY column HAVING condition;`
 
-#### Pull request from master branch to merge feature branch
-- `git pull origin BRANCH NAME`
+## **Join Operations**
 
-#### Delete merged branch
-- `git branch -d BRANCH NAME`
+#### Inner join
+- `SELECT columns FROM table1 INNER JOIN table2 ON table1.column = table2.column;`
+
+#### Left (outer) join
+- `SELECT columns FROM table1 LEFT JOIN table2 ON table1.column = table2.column;`
+
+#### Right (outer) join
+- `SELECT columns FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;`
+
+#### Full (outer) join
+- `SELECT columns FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column;`
+
+## **Advanced Operations**
+
+#### Subquery
+- `SELECT column FROM (SELECT column FROM table) AS subquery;`
+
+#### UNION operation to combine results of two queries
+- `SELECT column FROM table1 UNION SELECT column FROM table2;`
+
+#### Create index on a column
+- `CREATE INDEX index_name ON table_name (column);`
+
+#### Drop index
+- `DROP INDEX index_name;`
